@@ -1,0 +1,25 @@
+html, body {
+    background-color: aquamarine;
+    font-size: 20px;
+    border: 1px, solid, blue;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1 {
+    color:blue;
+}
+
+#basicInfo {
+    text-align: center;
+}
+
+#details {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contactInfo {
+    display: flex;
+    justify-content: space-between;
+}
