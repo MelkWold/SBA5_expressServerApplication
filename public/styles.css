@@ -1,13 +1,12 @@
 html, body {
-    background-color: aquamarine;
-    font-size: 20px;
-    border: 1px, solid, blue;
+    background-color: rgb(232, 237, 235);
     margin: 20px;
     padding: 20px;
 }
 
 h1 {
     color:blue;
+    text-align: center;
 }
 
 #basicInfo {
@@ -22,4 +21,14 @@ h1 {
 #contactInfo {
     display: flex;
     justify-content: space-between;
+}
+.input-field {
+    width:400px;
+    height:40px;
+    font-size:16px;
+    padding:5px;
+}
+
+textarea.input-field {
+    height: 120px;
 }

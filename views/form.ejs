@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="../public/styles.css">
+</head>
+<body>
+    <div>
+        <h1 style = "text-align: center; color: blue">Welcome to the digital card maker</h1>
+        <h3 style = "text-align: center;">To continue making your digital card, please enter the necessary information below. </h3>
+    </div>
+    <h2 style = "text-align: center">Create your digital card now</h2>
+    
+    <div style="display: flex; justify-content:space-between; align-items:center;margin: auto; padding: 10px;width: 500px; border: 1px solid chocolate">
+        <form action = "/create-digital-card" method = "POST" style ="width:300px; font-size:20px; padding:5px; margin:10px">
+            <input name = "fullName" placeholder="Full Name" class = "input-field"><br>
+            <input name = "title" placeholder="Title" class = "input-field" required><br>
+            <input name = "email" placeholder="Email" class = "input-field" required><br>
+            <input name = "phone" placeholder="Phone" class = "input-field" required><br>
+            <input name = "photoUrl" placeholder="Photo URL" class = "input-field"><br>
+            <textarea name = "summary" placeholder="Professional Summary" class = "input-field"></textarea><br>
+            <input name = "skills" placeholder="Skills (comma separated, e.g. HTML, CSS)" class = "input-field"><br>
+            <button type = "submit" style = "width:150px; height:50px">Create Digital Card</button><br>
+        </form>
+    </div>
+
+    <div>
+        <p style = "text-align: center; margin-top:20px;"><a href = "/">Back to Home</a></p>
+    </div>
+    
+</body>
+</html>
