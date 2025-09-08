@@ -1,0 +1,27 @@
+{
+  "name": "sba5_express_server_application",
+  "version": "1.0.0",
+  "description": "`This project ...`",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "nodemon server.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MelkWold/SBA5_expressServerApplication.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MelkWold/SBA5_expressServerApplication/issues"
+  },
+  "homepage": "https://github.com/MelkWold/SBA5_expressServerApplication#readme",
+  "keywords": [],
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
