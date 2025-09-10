@@ -8,19 +8,6 @@ userDataRouter
 .get((req, res) => {
     res.json(userData);
 })
-
-
-userDataRouter
-.route("/api/userData/:id")
-.get ((req, res) => {
-    const id = req.params.id;
-    const data = userData.find((data)=> id == data.id)
-    if (data){
-            res.json(data);
-    } else {
-            res.status(400).send("No user Id found!")}   
-})
-
 .post((req, res) => {
     const body = req.body;
     const newUser = {
@@ -35,6 +22,17 @@ userDataRouter
     }
     userData.push(newUser);
     res.json(newUser);
+});
+
+userDataRouter
+.route("/api/userData/:id")
+.get ((req, res) => {
+    const id = req.params.id;
+    const data = userData.find((data)=> id == data.id)
+    if (data){
+            res.json(data);
+    } else {
+            res.status(400).send("No user Id found!")}   
 })
 
 .put ((req, res) => {
@@ -77,5 +75,6 @@ userDataRouter
     // Remove the user at the index
     userData.splice(userIndex, 1);
     res.json({message: "User Deleted successfully.", remainingUsers: userData});
-})
+});
+
 export default userDataRouter;
