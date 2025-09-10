@@ -4,6 +4,7 @@ import ejs from "ejs";
 const PORT = process.env.PORT || 3000;
 import userDataRouter from "./routes/userData.mjs";
 import homeRouter from "./routes/homeRoute.mjs";
+import globalErrorHandler from "./middleware/globalErrorHandler.mjs";
 
 // Use express
 const app = express();
@@ -25,6 +26,10 @@ app.set("views", "./views");
 // Route for the home page, which is static
 app.use("/", homeRouter);
 app.use("/", userDataRouter) 
+
+
+// Mount Global Error handler function
+app.use(globalErrorHandler);
 
 
 // Start server
