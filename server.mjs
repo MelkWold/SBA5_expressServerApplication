@@ -2,7 +2,8 @@
 import express from "express";
 import ejs from "ejs";
 const PORT = process.env.PORT || 3000;
-import router from "./routes/homeRoute.mjs";
+import userDataRouter from "./routes/userData.mjs";
+import homeRouter from "./routes/homeRoute.mjs";
 
 // Use express
 const app = express();
@@ -22,9 +23,8 @@ app.set("views", "./views");
 
 // Routes
 // Route for the home page, which is static
-app.use("/", router);
- 
-
+app.use("/", homeRouter);
+app.use("/", userDataRouter) 
 
 
 // Start server
