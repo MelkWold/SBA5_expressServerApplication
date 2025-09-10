@@ -8,12 +8,12 @@
 
 </head>
 <body>
-    <div style = "border: 1px solid black; padding: 20px; margin: 20px">
+    <div id = "cardDiv">
         <div id = "basicInfo">
             <h1><%= fullName %></h1>
             <h3><%= title %></h3>
         </div>
-
+    <hr>
         <div id = "details">
             <div>
                 <% if (photoUrl) { %>
@@ -23,7 +23,7 @@
                     <% } %>
                 
             </div>
-
+            <br>
             <div>
                 <h3>Professional Summary</h3>
                 <p><%= summary %></p>
@@ -42,11 +42,14 @@
                 </ul>      
             </div>
         </div>
-
-        <div id = "contactInfo">
-            <h2>Contact Info</h2>
-            <h4>Email: <%= email %></h4>
-            <h4>Phone: <%= phone %></h4>
+        <br>
+        <hr>
+        <div>
+            <h3 style = "text-align: center;">Contact Info</h3>
+            <div id = "contactInfo">
+                <h4><span style = "color: rgb(101, 29, 3) ">Email:</span> <%= email %></h4>
+                <h4><span style = "color: rgb(101, 29, 3) ">Phone: </span><%= phone %></h4>
+            </div>
         </div>
     </div>
 </body>
