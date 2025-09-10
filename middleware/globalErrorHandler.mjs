@@ -1,5 +1,5 @@
 function globalErrorHandler(err, req, res, next) {
-    console.error("Error caught: ", err.stack || err);
+    console.error("Error caught: ", err.stack);
 
     // set default status 
     const statusCode = err.statusCode || 500;

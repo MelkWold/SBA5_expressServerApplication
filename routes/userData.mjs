@@ -41,7 +41,7 @@ userDataRouter
     const id = req.params.id;
     const body = req.body;
     // find the index of the user with the matching ID
-    const userIndex = userData.findIndex(user => user.id == id);
+    const userIndex = userData.findIndex(user => user.id == Number(id));
 
     // If user is not found, return error
     if (userIndex === -1) {
@@ -50,7 +50,7 @@ userDataRouter
 
     // Update the record
     userData[userIndex] = {
-            id: id,
+            id: Number(id),
             fullName:body.fullName,
             title:body.title,
             summary:body.summary,

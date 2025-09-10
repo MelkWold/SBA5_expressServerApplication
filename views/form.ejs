@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <link rel="stylesheet" href="../public/styles.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <div>
@@ -14,8 +14,8 @@
     <h2 style = "text-align: center">Create your digital card now</h2>
     
     <div style="display: flex; justify-content:space-between; align-items:center;margin: auto; padding: 10px;width: 500px; border: 1px solid chocolate">
-        <form action = "/create-digital-card" method = "POST" style ="width:300px; font-size:20px; padding:5px; margin:10px">
-            <input name = "fullName" placeholder="Full Name" class = "input-field"><br>
+        <form action = "/digitalCard" method = "POST" style ="width:300px; font-size:20px; padding:5px; margin:10px">
+            <input name = "fullName" placeholder="Full Name" class = "input-field" required><br>
             <input name = "title" placeholder="Title" class = "input-field" required><br>
             <input name = "email" placeholder="Email" class = "input-field" required><br>
             <input name = "phone" placeholder="Phone" class = "input-field" required><br>
