@@ -84,3 +84,7 @@ hr {
     border-radius: 2px;
     margin: 20px 0;
 }
+
+#homeDiv {
+    text-align: center;
+}
