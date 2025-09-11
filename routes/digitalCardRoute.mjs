@@ -5,6 +5,13 @@ const digitalCardRouter = express.Router();
 // Display the form
 digitalCardRouter
 .route("/digitalCard")
+.get((req, res) => {
+    res.send(
+        `<h1 style = "color: blue">Welcome! </h1>
+        <h2>Please enter your information to receive your shareable digital business card.</h2> 
+        <h3>Start <a href ="/form">here</a>.</h3>`
+        );
+})
 .post((req, res) => {
     const { fullName, title, summary, email, phone, skills, photoUrl } = req.body;
 
