@@ -3,7 +3,7 @@ const formRouter = express.Router();
 
 // Set routes for the form page
 formRouter
-.route("/form")
+.route("/api/form")
 .get((req, res)=> {
     res.render("form");
 })

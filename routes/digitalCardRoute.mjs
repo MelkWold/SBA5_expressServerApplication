@@ -29,9 +29,9 @@ digitalCardRouter
         summary,
         email,
         phone,
-        photoUrl,
-        skills: skillsArray
-    })
+        skills: skillsArray,
+        photoUrl
+    });
 });
 
 export default digitalCardRouter;

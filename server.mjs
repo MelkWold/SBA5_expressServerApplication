@@ -18,7 +18,7 @@ app.use(express.static("public"));
 // Middleware
 // Parse from POST body
 app.use(express.json());
-app.use(express.urlencoded({ extended: true})); // to handle form data
+app.use(express.urlencoded({ extended: true })); // to handle form data
 app.use(morgan('dev'));
 
 
