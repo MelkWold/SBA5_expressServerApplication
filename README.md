@@ -1,7 +1,7 @@
 # SBA 318: Express Server Application
 
 ## Project Description
-`A Node.js + Express application for creating and sharing **digital business cards**. Users are prompted to enter basic information via a form and recieve styled, shareable card rendered with **EJS**. More work is being done to make the digital card downloadable. The project exposes RESTful API endpoints for managing users.`
+A Node.js + Express application for creating and sharing **digital business cards**. Users are prompted to enter basic information via a form and recieve styled, shareable card rendered with **EJS**. More work is being done to make the digital card downloadable. The project exposes RESTful API endpoints for managing users.
 
 The list of items requested from the user (via a form?) are:
     1. Full Name
@@ -12,7 +12,7 @@ The list of items requested from the user (via a form?) are:
     6. Contact Information (Email and Phone)
 
 ## Features
-`The main features of the project are:`
+The main features of the project are:
  - Static home page with introduction,
  - Form (/form) to submit card data,
  - Dynamic rendering of digital cards with **EJS** templates,
