@@ -3,7 +3,7 @@
 ## Project Description
 `A Node.js + Express application for creating and sharing **digital business cards**. Users are prompted to enter basic information via a form and recieve styled, shareable card rendered with **EJS**. More work is being done to make the digital card downloadable. The project exposes RESTful API endpoints for managing users.`
 
-`The list of items requested from the user (via a form?) are:`
+The list of items requested from the user (via a form?) are:
     1. Full Name
     2. Professional Title
     3. Professional summary (100 words)
@@ -21,15 +21,15 @@
  - Global Error Handling with an error handling middleware and logging with **Morgan**.
 
 ## Views
-`The following are included in the project:`
-    1. `card.html/ejs`- dynamically rendered template
-    2. `form.html/ejs` - collects data from users and redirects them to card.ejs upon submission
-    3. `home.html` - static page welcoming users and giving instruction and redirecting to the card.ejs
+`The following views are included in the project:`
+    1. **card.html/ejs** - dynamically rendered template
+    2. **form.html/ejs** - collects data from users and redirects them to card.ejs upon submission
+    3. **home.html** - static page welcoming users and giving instruction and redirecting to the card.ejs
 
 ## View routes
-    - `/`- redirects to the home page
-    - `/form` - EJS form for input
-    - `/digitalCard` - Generates digital card view
+    **`/`** - redirects to the home page
+    **`/form`** - EJS form for input
+    **`/digitalCard`** - Generates digital card view
 
 ## API Endpoints
 
