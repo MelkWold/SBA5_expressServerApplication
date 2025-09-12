@@ -21,15 +21,15 @@ The list of items requested from the user (via a form?) are:
  - Global Error Handling with an error handling middleware and logging with **Morgan**.
 
 ## Views
-`The following views are included in the project:`
+The following views are included in the project:
     1. **card.html/ejs** - dynamically rendered template
     2. **form.html/ejs** - collects data from users and redirects them to card.ejs upon submission
     3. **home.html** - static page welcoming users and giving instruction and redirecting to the card.ejs
 
 ## View routes
-    **`/`** - redirects to the home page
-    **`/form`** - EJS form for input
-    **`/digitalCard`** - Generates digital card view
+    **"/"** - redirects to the home page
+    **"/form"** - EJS form for input
+    **"/digitalCard"** - Generates digital card view
 
 ## API Endpoints
 
