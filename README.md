@@ -1,15 +1,15 @@
 # SBA 318: Express Server Application
 
 ## Project Description
-A Node.js + Express application for creating and sharing **digital business cards**. Users are prompted to enter basic information via a form and recieve styled, shareable card rendered with **EJS**. More work is being done to make the digital card downloadable. The project exposes RESTful API endpoints for managing users.
+A Node.js + Express application for creating and sharing **digital business cards**. Users are prompted to enter basic information via a form and receive styled, shareable card rendered with **EJS**. More work is being done to make the digital card downloadable. The project exposes RESTful API endpoints for managing users.
 
 The list of items requested from the user (via a form?) are:
-    1. Full Name
-    2. Professional Title
-    3. Professional summary (100 words)
-    4. List of skills
-    5. Photo URL
-    6. Contact Information (Email and Phone)
+1. Full Name
+2. Professional Title
+3. Professional summary (100 words)
+4. List of skills
+5. Photo URL
+6. Contact Information (Email and Phone)
 
 ## Features
 The main features of the project are:
@@ -22,33 +22,33 @@ The main features of the project are:
 
 ## Views
 The following views are included in the project:
-    1. **card.html/ejs** - dynamically rendered template
-    2. **form.html/ejs** - collects data from users and redirects them to card.ejs upon submission
-    3. **home.html** - static page welcoming users and giving instruction and redirecting to the card.ejs
+1. **card.ejs** - dynamically rendered template
+2. **form.ejs** - collects data from users and redirects them to card.ejs upon submission
+3. **home.html** - static page welcoming users and giving instruction and redirecting to the card.ejs
 
 ## View routes
-    **"/"** - redirects to the home page
-    **"/form"** - EJS form for input
-    **"/digitalCard"** - Generates digital card view
+1. "/" - redirects to the home page
+2. "/form" - EJS form for input
+3. "/digitalCard" - Generates digital card view
 
 ## API Endpoints
 
-    | Method |     Endpoint          |       Description       |
-    |--------|-----------------------|-------------------------|
-    |  GET   |  `/api/userData`      |    Get all users        |
-    |  GET   |  `/api/userData/:id`  |    Get user by ID       |
-    |  POST  |  `/api/userData`      |    Create a user        |
-    |  PUT   |  `/api/userData/:id`  |    Update a user        |
-    | DELETE |  `/api/userData/:id`  |    Delete a user        |
-    |  POST  |  `/digitalCard`       | Create a digital card   |
+| Method |     Endpoint          |       Description       |
+|--------|-----------------------|-------------------------|
+|  GET   |  `/api/userData`      |    Get all users        |
+|  GET   |  `/api/userData/:id`  |    Get user by ID       |
+|  POST  |  `/api/userData`      |    Create a user        |
+|  PUT   |  `/api/userData/:id`  |    Update a user        |
+| DELETE |  `/api/userData/:id`  |    Delete a user        |
+|  POST  |  `/digitalCard`       | Create a digital card   |
 
 
 #### Programming Languages and Tech Stack used:
     - JavaScript
     - HTML
-    - Cascading styling Sheet (CSS) 
+    - Cascading style Sheets (CSS) 
     - Node.JS + Express
-    - Embeded JavaScript (EJS)- for templating
+    - Embedded JavaScript (EJS)- for templating
     - Morgan- for logging
     - In-memory array (userData) as mock database.
 
