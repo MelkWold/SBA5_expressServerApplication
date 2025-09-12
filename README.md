@@ -24,14 +24,15 @@
     3. home.html - static page welcoming users and giving instruction and redirecting to the card.ejs
 
 ## API Endpoints
+
     | Method |     Endpoint        |       Description       |
-    |--------|---------------------|-------------------------|
-    |  GET   |  /api/userData      |    Get all users        |
-    |  GET   |  /api/userData/:id  |    Get user by ID       |
-    |  POST  |  /api/userData      |    Create a user        |
-    |  PUT   |  /api/userData/:id  |    Update a user        |
-    | DELETE |  /api/userData/:id  |    Delete a user        |
-    |  POST  |  /digitalCard       | Create a digital card   |
+    |--------|-----------------------|-------------------------|
+    |  GET   |  `/api/userData`      |    Get all users        |
+    |  GET   |  `/api/userData/:id`  |    Get user by ID       |
+    |  POST  |  `/api/userData`      |    Create a user        |
+    |  PUT   |  `/api/userData/:id`  |    Update a user        |
+    | DELETE |  `/api/userData/:id`  |    Delete a user        |
+    |  POST  |  `/digitalCard`       | Create a digital card   |
 
 ## Views
     - "/"- redirects to the home page
