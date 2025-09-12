@@ -1,7 +1,7 @@
 # SBA 318: Express Server Application
 
 ## Project Description
-`A Node.js + Express application for creating and sharing ** digital business cards **. Users are prompted to enter basic information via a form and recieve styled, shareable card rendered with **EJS**. More work is being done to make the digital card downloadable. The project exposes RESTful API endpoints for managing users.`
+`A Node.js + Express application for creating and sharing **digital business cards**. Users are prompted to enter basic information via a form and recieve styled, shareable card rendered with **EJS**. More work is being done to make the digital card downloadable. The project exposes RESTful API endpoints for managing users.`
 
 `The list of items requested from the user (via a form?) are:`
     1. Full Name
@@ -12,20 +12,28 @@
     6. Contact Information (Email and Phone)
 
 ## Features
- - Static home page with introduction
- - Form (/form) to submit card data.
- - Dynamic rendering of digital cards with **EJS** templates.
- - Restful API to manage user data ("GET", "POST", "PUT", "DELETE")
- - Supports custom photo via URL
- - Global Error Handling with an error handling middleware and logging with **Morgan**
-`The following views will be created:`
-    1. card.html/ejs- dynamically rendered template
-    2. form.html/ejs - collects data from users and redirects them to card.ejs upon submission
-    3. home.html - static page welcoming users and giving instruction and redirecting to the card.ejs
+`The main features of the project are:`
+ - Static home page with introduction,
+ - Form (/form) to submit card data,
+ - Dynamic rendering of digital cards with **EJS** templates,
+ - Restful API to manage user data ("GET", "POST", "PUT", "DELETE"),
+ - Supports custom photo via URL and
+ - Global Error Handling with an error handling middleware and logging with **Morgan**.
+
+## Views
+`The following are included in the project:`
+    1. `card.html/ejs`- dynamically rendered template
+    2. `form.html/ejs` - collects data from users and redirects them to card.ejs upon submission
+    3. `home.html` - static page welcoming users and giving instruction and redirecting to the card.ejs
+
+## View routes
+    - `/`- redirects to the home page
+    - `/form` - EJS form for input
+    - `/digitalCard` - Generates digital card view
 
 ## API Endpoints
 
-    | Method |     Endpoint        |       Description       |
+    | Method |     Endpoint          |       Description       |
     |--------|-----------------------|-------------------------|
     |  GET   |  `/api/userData`      |    Get all users        |
     |  GET   |  `/api/userData/:id`  |    Get user by ID       |
@@ -34,10 +42,6 @@
     | DELETE |  `/api/userData/:id`  |    Delete a user        |
     |  POST  |  `/digitalCard`       | Create a digital card   |
 
-## Views
-    - "/"- redirects to the home page
-    - "/form" - EJS form for input
-    - "/digitalCard" - Generates digital card view
 
 #### Programming Languages and Tech Stack used:
     - JavaScript
@@ -51,13 +55,13 @@
 ## Reflection
 
  #### What could you have done differently during the planning stages of your project to make the execution easier?
-``
+`I feel like I have done a good job planning and executing the project, which allowed me to finish the core aspects of the project ahead of time. I will follow the same approach for future projects.`
 
  #### Were there any requirements that were difficult to implement? What do you think would make them easier to implement in future projects?
-``
+`The requirements are reasonable and clear.`
 
  #### What would you add to or change about your application if given more time?
-``
+`I will include three additional features (functionality to download the digital card, photo uploading and storage capability, and adding QR codes for each card), but all of them require not just time, but additional tools.`
 
  #### Use this space to make notes for your future self about anything that you think is important to remember about this process or that may aid you when attempting something similar.
-``
+`Include the additional features to make to app more robust.`
