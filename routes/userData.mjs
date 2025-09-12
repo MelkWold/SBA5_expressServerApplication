@@ -8,6 +8,8 @@ userDataRouter
 .get((req, res) => {
     res.json(userData);
 })
+
+// Create a new user
 .post((req, res) => {
     const body = req.body;
     const newUser = {
@@ -24,6 +26,7 @@ userDataRouter
     res.json(newUser);
 });
 
+// GET user by id
 userDataRouter
 .route("/api/userData/:id")
 .get ((req, res) => {
@@ -35,6 +38,7 @@ userDataRouter
             res.status(400).send("No user Id found!")}   
 })
 
+// Update user by id
 .put ((req, res) => {
     const id = req.params.id;
     const body = req.body;
@@ -63,6 +67,7 @@ userDataRouter
 
 })
 
+// Delete user by id
 .delete((req, res) => {
     const id = req.params.id;
     // find the index of the user with the matching ID
@@ -76,5 +81,21 @@ userDataRouter
     userData.splice(userIndex, 1);
     res.json({message: "User Deleted successfully.", remainingUsers: userData});
 });
+
+// Filter users by title: I didn't see any need to use it, but the following code works to filter a user by their title(if needed)
+// userDataRouter
+// .route("/api/userData")
+// .get((req, res) => {
+//     const { title } = req.query;
+
+//     if(!title) {
+//         res.json(userData);
+//     } 
+
+//     const usersWithTitle = userData.filter(user => user.title && user.title.toLowerCase() === title.toLowerCase());
+
+//     res.json(usersWithATitile);
+    
+// });
 
 export default userDataRouter;
